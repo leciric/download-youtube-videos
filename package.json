@@ -1,0 +1,20 @@
+{
+  "name": "youtube",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/script.js",
+    "build:linux": "pkg --public-packages '*' -o youtube-cuts-lin-64  -t node16-lin-x64 src/script.js",
+    "build:windows": "pkg --public-packages '*' -o youtube-cuts-win-64 -t node16-win-x64 src/script.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "pkg": "^5.8.0",
+    "ytdl-core": "^4.11.2"
+  }
+}
